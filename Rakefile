@@ -5,7 +5,7 @@ desc "install the dot files into user's home directory"
 task :install do
   install_oh_my_zsh
 	switch_to_zsh 
-  files = Dir['*'] - %w[Rakefile README.md brew.sh]
+  files = Dir['*'] - %w[Rakefile README.md brew.sh itermcolors]
   # by default we will replace all the files existing in our dotfiles
   files.each do |file|
     system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
