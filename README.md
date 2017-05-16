@@ -21,6 +21,10 @@ $ rake install
 # link vimrc
 $ ln -s ~/dotfiles/vim ~/.vim
 $ ln -s ~/dotfiles/vimrc ~/.vimrc
+
+# Linux (For keyboard not swapping ctrl and capslock)
+$ ln -s ~/dotfiles/Xmodmap ~/.Xmodmap
+
 ```
 
 ## Slate
